@@ -18,49 +18,28 @@ npm install --save academic-email-verifier
 const verifier = require('academic-email-verifier');
 ```
 
-<!-- ### Define Package Characteristics:
+### Verifier academic email address:
 ```javascript
-// define package characteristics
-let weightInGrams = 20;
-let serviceType = Options.AbroadMailOptions.LETTER.shipmentType;
-let serviceSubtype = Options.AbroadMailOptions.LETTER.shipmentSubtypes.regular;
-let option = serviceSubtype.options.signed;
-let ips = new IPS();
+// check if email address is a valid academic email address
+verifier.isAcademic('benny@stanford.edu')
+        .then(result => console.log(result))
+        .catch(error => console.log(error));
 ```
 
-### Calculate Shipping Rate:
-#### _Option 1: with promises_
+### Get full institution name:
 ```javascript
-// calculate package shipping rate asynchronously
-ips.calculateAbroadShippingRate("Spain", weightInGrams, serviceType, serviceSubtype, option).then((response) => {
-    console.log(response.getTotalPrice());
-}).catch((error) => {
-    console.error('Error:', error);
-});
+// get full institution name
+verifier.getInstitutionName('benny@stanford.edu')
+        .then(result => console.log(result))
+        .catch(error => console.log(error));
 ```
 
-#### _Option 2: with async await_
-```javascript
-// calculate package shipping rate asynchronously
-calculatePrice = async () => {
-    try {
-        const response = await ips.calculateAbroadShippingRate("Spain", weightInGrams, serviceType, serviceSubtype, option);
-        console.log(response.getTotalPrice());
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
 
-// invoke function
-calculatePrice();
-``` -->
-
-
-<!-- ## Documentation ##  
+## Documentation ##  
 - 👨🏼‍💻 [API](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/docs/API.md),  
 - 👩🏼‍🏫 [Examples](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/docs/examples),  
 - 📜 [Change log](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/docs/CHANGELOG.md),  
-- 🖋 [Licence](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/LICENSE) -->
+- 🖋 [Licence](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/LICENSE)
 
 ## Support ##
 If you're having any problem, please [raise an issue](https://github.com/bennymeg/AcademicEmailVerifier/issues/new) on GitHub and we'll be happy to help.
