@@ -20,7 +20,7 @@ Exposes academic email verifier API
 check's if the email address is valid (in an proper email format - RFC 2822)
 
 **Kind**: static method of [<code>Verifier</code>](#Verifier)
-**Returns**: <code>boolean</code> - true, if email address is valid, false, otherwise
+**Returns**: <code>boolean</code> - true, if the email address is valid, false, otherwise
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -36,15 +36,15 @@ converts tld to url format
 
 | Param | Type | Description |
 | --- | --- | --- |
-| emailAddress | <code>string</code> | email address to be checked |
+| emailAddress | <code>string</code> | email address to be converted |
 
 <a name="Verifier.isAcademic"></a>
 
 ### Verifier.isAcademic(emailAddress) ⇒ <code>Promise.&lt;boolean&gt;</code>
-check's if thr email address is academic
+check's if the email address is academic
 
 **Kind**: static method of [<code>Verifier</code>](#Verifier)
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - true, if email address is academic, false, otherwise
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - true, if the email address is academic, false, otherwise
 
 | Param | Type | Description |
 | --- | --- | --- |

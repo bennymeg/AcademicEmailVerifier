@@ -15,7 +15,7 @@ class Verifier {
     /**
      * check's if the email address is valid (in an proper email format - RFC 2822)
      * @param {string} emailAddress email address to be checked
-     * @returns {boolean} true, if email address is valid, false, otherwise
+     * @returns {boolean} true, if the email address is valid, false, otherwise
      */
     static isValidEmailAddress(emailAddress) {
         let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -25,7 +25,7 @@ class Verifier {
 
     /**
      * converts tld to url format
-     * @param {string} emailAddress email address to be checked
+     * @param {string} emailAddress email address to be converted
      * @returns {string} tld as url
      */
     static domainToUrl(domain) {
@@ -38,9 +38,9 @@ class Verifier {
     }
 
     /**
-     * check's if thr email address is academic
+     * check's if the email address is academic
      * @param {string} emailAddress email address to be checked
-     * @returns {Promise<boolean>} true, if email address is academic, false, otherwise
+     * @returns {Promise<boolean>} true, if the email address is academic, false, otherwise
      */
     static isAcademic(emailAddress) {
         return new Promise((resolve, reject) => {
