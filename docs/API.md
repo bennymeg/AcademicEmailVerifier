@@ -1,76 +1,61 @@
 # Academic Email Verifier API
-**Author**: Benny Megidish
 
-## Constants
+<a name="Verifier"></a>
 
-<dl>
-<dt><a href="#domainsBasePath">domainsBasePath</a></dt>
-</dl>
-
-## Functions
-
-<dl>
-<dt><a href="#isValidEmailAddress">isValidEmailAddress(emailAddress)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check&#39;s if the email address is valid (in an proper email format - RFC 2822)</p>
-</dd>
-<dt><a href="#domainToUrl">domainToUrl(emailAddress)</a> ⇒ <code>string</code></dt>
-<dd><p>converts tld to url format</p>
-</dd>
-<dt><a href="#isAcademic">isAcademic(emailAddress)</a> ⇒ <code>Promise.&lt;boolean&gt;</code></dt>
-<dd><p>check&#39;s if thr email address is academic</p>
-</dd>
-<dt><a href="#getInstitutionName">getInstitutionName(emailAddress)</a> ⇒ <code>Promise.&lt;string&gt;</code></dt>
-<dd><p>query email address institution name</p>
-</dd>
-</dl>
-
-<a name="domainsBasePath"></a>
-
-## domainsBasePath
+## Verifier
 Exposes academic email verifier API
 
-<a name="isValidEmailAddress"></a>
+**Kind**: global class
+**Author**: Benny Megidish
 
-## isValidEmailAddress(emailAddress) ⇒ <code>boolean</code>
+* [Verifier](#Verifier)
+    * [.isValidEmailAddress(emailAddress)](#Verifier.isValidEmailAddress) ⇒ <code>boolean</code>
+    * [.domainToUrl(emailAddress)](#Verifier.domainToUrl) ⇒ <code>string</code>
+    * [.isAcademic(emailAddress)](#Verifier.isAcademic) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.getInstitutionName(emailAddress)](#Verifier.getInstitutionName) ⇒ <code>Promise.&lt;string&gt;</code>
+
+<a name="Verifier.isValidEmailAddress"></a>
+
+### Verifier.isValidEmailAddress(emailAddress) ⇒ <code>boolean</code>
 check's if the email address is valid (in an proper email format - RFC 2822)
 
-**Kind**: global function
+**Kind**: static method of [<code>Verifier</code>](#Verifier)
 **Returns**: <code>boolean</code> - true, if email address is valid, false, otherwise
 
 | Param | Type | Description |
 | --- | --- | --- |
 | emailAddress | <code>string</code> | email address to be checked |
 
-<a name="domainToUrl"></a>
+<a name="Verifier.domainToUrl"></a>
 
-## domainToUrl(emailAddress) ⇒ <code>string</code>
+### Verifier.domainToUrl(emailAddress) ⇒ <code>string</code>
 converts tld to url format
 
-**Kind**: global function
+**Kind**: static method of [<code>Verifier</code>](#Verifier)
 **Returns**: <code>string</code> - tld as url
 
 | Param | Type | Description |
 | --- | --- | --- |
 | emailAddress | <code>string</code> | email address to be checked |
 
-<a name="isAcademic"></a>
+<a name="Verifier.isAcademic"></a>
 
-## isAcademic(emailAddress) ⇒ <code>Promise.&lt;boolean&gt;</code>
+### Verifier.isAcademic(emailAddress) ⇒ <code>Promise.&lt;boolean&gt;</code>
 check's if thr email address is academic
 
-**Kind**: global function
+**Kind**: static method of [<code>Verifier</code>](#Verifier)
 **Returns**: <code>Promise.&lt;boolean&gt;</code> - true, if email address is academic, false, otherwise
 
 | Param | Type | Description |
 | --- | --- | --- |
 | emailAddress | <code>string</code> | email address to be checked |
 
-<a name="getInstitutionName"></a>
+<a name="Verifier.getInstitutionName"></a>
 
-## getInstitutionName(emailAddress) ⇒ <code>Promise.&lt;string&gt;</code>
+### Verifier.getInstitutionName(emailAddress) ⇒ <code>Promise.&lt;string&gt;</code>
 query email address institution name
 
-**Kind**: global function
+**Kind**: static method of [<code>Verifier</code>](#Verifier)
 **Returns**: <code>Promise.&lt;string&gt;</code> - academic institution name, if exist, '', otherwise
 
 | Param | Type | Description |
