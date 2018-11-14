@@ -6,7 +6,6 @@ Identifies email addresses or domains names that belong to colleges or universit
 [![github version](https://img.shields.io/github/package-json/v/badges/shields.svg)](https://github.com/bennymeg/AcademicEmailVerifier)
 ![GitHub repository size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)
 
-
 ## Installation
 ```bash
 npm install --save academic-email-verifier
@@ -18,7 +17,7 @@ npm install --save academic-email-verifier
 const verifier = require('academic-email-verifier');
 ```
 
-### Verifier academic email address:
+### Verify academic email address:
 ```javascript
 // check if email address is a valid academic email address
 verifier.isAcademic('benny@stanford.edu')
