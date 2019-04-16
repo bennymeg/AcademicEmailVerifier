@@ -4,7 +4,7 @@ Retrieves institution name (and sometime role [faculty, student]).
 
 [![licence](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/academic-email-verifier.svg)](https://www.npmjs.com/package/academic-email-verifier)
-[![Dependencies status](https://david-dm.org/bennymeg/eacademic-email-verifier/status.svg)](https://david-dm.org/bennymeg/academic-email-verifier)
+[![Dependencies status](https://david-dm.org/bennymeg/AcademicEmailVerifier/status.svg)](https://david-dm.org/bennymeg/AcademicEmailVerifier)
 <!-- [![github version](https://img.shields.io/github/package-json/v/badges/shields.svg)](https://github.com/bennymeg/AcademicEmailVerifier)
 ![GitHub repository size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg) -->
 
