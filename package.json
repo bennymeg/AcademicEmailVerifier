@@ -1,6 +1,6 @@
 {
   "name": "academic-email-verifier",
-  "version": "1.1.3",
+  "version": "2.0.0",
   "description": "Identifies email addresses or domains names that belong to colleges or universities",
   "main": "index.js",
   "homepage": "https://github.com/bennymeg/AcademicEmailVerifier",
@@ -11,18 +11,18 @@
   },
   "keywords": [
     "Academic",
+    "Email",
+    "Verifier",
     "University",
     "College",
-    "Email",
-    "TLD",
-    "Verifier"
+    "TLD"
   ],
   "author": "Benny Megidish",
   "repository": {
     "type": "git",
     "url": "https://github.com/bennymeg/AcademicEmailVerifier.git"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "devDependencies": {
     "chai": "^4.2.0",
     "jshint": "^2.10.2",

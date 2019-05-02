@@ -1,4 +1,4 @@
-const verifier = require('../index');
+const verifier = require('../index').Verifier;
 const assert = require('chai').assert; 
 
 /* jshint ignore:start */

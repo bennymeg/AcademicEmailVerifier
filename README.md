@@ -5,8 +5,6 @@ Retrieves institution name and owner role (i.e. faculty, student) if available.
 [![licence](https://img.shields.io/github/license/bennymeg/AcademicEmailVerifier.svg)](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/academic-email-verifier.svg)](https://www.npmjs.com/package/academic-email-verifier)
 [![Dependencies status](https://david-dm.org/bennymeg/AcademicEmailVerifier/status.svg)](https://david-dm.org/bennymeg/AcademicEmailVerifier)
-<!-- [![github version](https://img.shields.io/github/package-json/v/badges/shields.svg)](https://github.com/bennymeg/AcademicEmailVerifier)
-![GitHub repository size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg) -->
 
 ## Installation
 ```bash
@@ -16,13 +14,13 @@ npm install --save academic-email-verifier
 
 ### Import library:
 ```javascript
-const verifier = require('academic-email-verifier');
+import { Verifier } from 'academic-email-verifier';
 ```
 
 ### Verify academic email address:
 ```javascript
 // check if email address is a valid academic email address
-verifier.isAcademic('benny@stanford.edu')
+Verifier.isAcademic('benny@stanford.edu')
         .then(result => console.log(result))
         .catch(error => console.log(error));
 ```
@@ -30,7 +28,7 @@ verifier.isAcademic('benny@stanford.edu')
 ### Get full institution name:
 ```javascript
 // get full institution name
-verifier.getInstitutionName('benny@stanford.edu')
+Verifier.getInstitutionName('megidish@mit.edu')
         .then(result => console.log(result))
         .catch(error => console.log(error));
 ```
