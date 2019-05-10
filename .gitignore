@@ -71,3 +71,7 @@ typings/
 
 # Serverless directories
 .serverless
+
+# site
+site/*
+!site/dist
