@@ -33,6 +33,8 @@ Verifier.getInstitutionName('megidish@mit.edu')
         .catch(error => console.log(error));
 ```
 
+## Supported Environments ##
+- 🖥  Node.js
 
 ## Documentation ##  
 - 👨🏼‍💻 [API](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/docs/API.md),  
