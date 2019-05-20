@@ -38,9 +38,9 @@ Verifier.getInstitutionName('megidish@mit.edu')
 - 🖥  Node.js
 
 ## Documentation ##  
-- 👨🏼‍💻 [API](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/docs/API.md),  
-- 👩🏼‍🏫 [Examples](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/docs/examples),  
-- 📜 [Change log](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/docs/CHANGELOG.md),  
+- 👨🏼‍💻 [API](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/API.md),  
+- 👩🏼‍🏫 [Examples](https://github.com/bennymeg/AcademicEmailVerifier/blob/masterexamples),  
+- 📜 [Change log](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/CHANGELOG.md),  
 - 🖋 [Licence](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/LICENSE)
 
 ## Support ##
