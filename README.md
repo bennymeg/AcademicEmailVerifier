@@ -1,6 +1,7 @@
 # Academic Email Verifier
 Identifies email addresses or domains names that belong to colleges or universities.
-Retrieves institution name and owner role (i.e. faculty, student) if available.   
+Retrieves institution name and owner role (i.e. faculty, student) if available.
+[Service Demo](https://bennymeg.github.io/AcademicEmailVerifier/).
 
 [![licence](https://img.shields.io/github/license/bennymeg/AcademicEmailVerifier.svg)](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/academic-email-verifier.svg)](https://www.npmjs.com/package/academic-email-verifier)
