@@ -74,4 +74,4 @@ typings/
 
 # site
 site/*
-!site/dist
+!site/dist/
