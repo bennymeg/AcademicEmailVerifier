@@ -18,20 +18,16 @@ npm install --save academic-email-verifier
 import { Verifier } from 'academic-email-verifier';
 ```
 
-### Verify academic email address:
+### Verify academic email address asynchronically:
 ```javascript
 // check if email address is a valid academic email address
-Verifier.isAcademic('benny@stanford.edu')
-        .then(result => console.log(result))
-        .catch(error => console.log(error));
+let isAcademic = await Verifier.isAcademic('benny@stanford.edu');
 ```
 
-### Get full institution name:
+### Get full institution name asynchronically:
 ```javascript
 // get full institution name
-Verifier.getInstitutionName('megidish@mit.edu')
-        .then(result => console.log(result))
-        .catch(error => console.log(error));
+let institutionName = await Verifier.getInstitutionName('megidish@mit.edu');
 ```
 
 ## Supported Environments ##
