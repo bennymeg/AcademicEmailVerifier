@@ -1,6 +1,6 @@
 {
   "name": "academic-email-verifier",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "description": "Identifies email addresses or domains names that belong to colleges or universities",
   "main": "index.js",
   "homepage": "https://bennymeg.github.io/AcademicEmailVerifier/",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "jshint": "^2.10.2",
-    "mocha": "^6.1.4"
+    "mocha": "^6.2.0"
   },
   "dependencies": {}
 }
