@@ -3,6 +3,7 @@
   "version": "2.0.12",
   "description": "Identifies email addresses or domains names that belong to colleges or universities",
   "main": "index.js",
+  "types": "index.d.ts",
   "homepage": "https://bennymeg.github.io/AcademicEmailVerifier/",
   "scripts": {
     "start": "node index.js",
