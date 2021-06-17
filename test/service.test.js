@@ -16,10 +16,10 @@ describe('Service', () => {
             assert.isFalse(result);
         });
 
-        it('assert email not formated correctly', () => {
+        it('assert email not formatted correctly', () => {
             return verifier.isAcademic('america.edu')
                             .then(() => { throw new Error('was not supposed to succeed'); })
-                            .catch((error) => { assert.equal(error, 'Error: Email address is not properly formated'); });
+                            .catch((error) => { assert.equal(error, 'Error: Email address is not properly formatted'); });
         });
     });
 
@@ -36,10 +36,10 @@ describe('Service', () => {
             assert.equal(result, '');
         });
 
-        it('assert email not formated correctly', async () => {
+        it('assert email not formatted correctly', async () => {
             return verifier.getInstitutionName('america.edu')
                             .then(() => { throw new Error('was not supposed to succeed'); })
-                            .catch((error) => { assert.equal(error, 'Error: Email address is not properly formated'); });
+                            .catch((error) => { assert.equal(error, 'Error: Email address is not properly formatted'); });
         });
     });
 });

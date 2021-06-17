@@ -61,7 +61,7 @@ class Verifier {
     static isAcademic(emailAddress) {
         return new Promise((resolve, reject) => {
             if (!this.isValidEmailAddress(emailAddress)) {
-                reject(Error("Email address is not properly formated"));
+                reject(Error("Email address is not properly formatted"));
             } else {
                 let domain = emailAddress.split("@").reverse()[0];
                 let domainUrl = this.domainToUrl(domain);
@@ -92,7 +92,7 @@ class Verifier {
     static getInstitutionName(emailAddress) {
         return new Promise((resolve, reject) => {
             if (!this.isValidEmailAddress(emailAddress)) {
-                reject(Error("Email address is not properly formated"));
+                reject(Error("Email address is not properly formatted"));
             } else {
                 let domain = emailAddress.split("@").reverse()[0];
                 let domainUrl = this.domainToUrl(domain);
@@ -100,14 +100,22 @@ class Verifier {
 
                 // check if the domain is blacklisted
                 if (blacklist.indexOf(domain) === -1) {
-                    // try to read the domain institution name
-                    fs.readFile(domainPath, (error, data) => {
+                    fs.access(domainPath, fs.constants.R_OK, (error) => {
                         if (error) {
-                            reject(error);
+                            resolve('');
                         } else {
-                            resolve(data.toString('utf8'));
+                            // try to read the domain institution name
+                            fs.readFile(domainPath, (error, data) => {
+                                if (error) {
+                                    console.error('[Academic Email Verifier]', error);
+                                    reject('');
+                                } else {
+                                    resolve(data.toString('utf8'));
+                                } 
+                            });
                         } 
                     });
+                   
                 } else {
                     resolve('');
                 }  
