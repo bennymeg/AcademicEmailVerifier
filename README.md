@@ -5,7 +5,7 @@ Retrieves institution name and owner role (i.e. faculty, student) if available.
 
 [![licence](https://img.shields.io/github/license/bennymeg/AcademicEmailVerifier.svg)](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/academic-email-verifier.svg)](https://www.npmjs.com/package/academic-email-verifier)
-[![Dependencies status](https://david-dm.org/bennymeg/AcademicEmailVerifier/status.svg)](https://david-dm.org/bennymeg/AcademicEmailVerifier)
+<!-- [![Dependencies status](https://david-dm.org/bennymeg/AcademicEmailVerifier/status.svg)](https://david-dm.org/bennymeg/AcademicEmailVerifier) -->
 
 ## Installation
 ```bash
@@ -37,7 +37,7 @@ let institutionName = await Verifier.getInstitutionName('megidish@mit.edu');
 - 👨🏼‍💻 [API](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/API.md),  
 - 👩🏼‍🏫 [Examples](https://github.com/bennymeg/AcademicEmailVerifier/blob/masterexamples),  
 - 📜 [Change log](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/CHANGELOG.md),  
-- 🖋 [Licence](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/LICENSE)
+- 🖋 [License](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/LICENSE)
 
 ## Support ##
 If you're having any problem, please [raise an issue](https://github.com/bennymeg/AcademicEmailVerifier/issues/new) on GitHub and we'll be happy to help.

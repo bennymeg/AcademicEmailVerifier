@@ -1,6 +1,6 @@
 {
   "name": "academic-email-verifier",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Identifies email addresses or domains names that belong to colleges or universities",
   "main": "index.js",
   "types": "index.d.ts",
@@ -25,8 +25,8 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "chai": "^4.3.4",
-    "jshint": "^2.13.1",
+    "chai": "^4.3.6",
+    "jshint": "^2.13.4",
     "mocha": "^6.2.3"
   },
   "dependencies": {}
