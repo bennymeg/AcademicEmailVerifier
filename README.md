@@ -35,7 +35,7 @@ let institutionName = await Verifier.getInstitutionName('megidish@mit.edu');
 
 ## Documentation ##  
 - 👨🏼‍💻 [API](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/API.md),  
-- 👩🏼‍🏫 [Examples](https://github.com/bennymeg/AcademicEmailVerifier/blob/masterexamples),  
+- 👩🏼‍🏫 [Examples](https://github.com/bennymeg/AcademicEmailVerifier/tree/master/examples),  
 - 📜 [Change log](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/CHANGELOG.md),  
 - 🖋 [License](https://github.com/bennymeg/AcademicEmailVerifier/blob/master/LICENSE)
 
